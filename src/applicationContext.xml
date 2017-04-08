@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+	<bean name="A" class="edu.jyu.bean.A">
+		<property name="name" value="Jason"></property>
+	</bean>
+
+	<bean name="B" class="edu.jyu.bean.B" scope="prototype">
+		<property name="a" ref="A"></property>
+		<property name="age" value="13"></property>
+	</bean>
+</beans>
