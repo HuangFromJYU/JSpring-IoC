@@ -2,7 +2,7 @@
 <beans>
 	<bean name="A" class="edu.jyu.bean.A">
 		<property name="name" value="Jason"></property>
-		<property name="B" ref="b"></property>
+		<property name="b" ref="B"></property>
 	</bean>
 
 	<bean name="B" class="edu.jyu.bean.B" scope="prototype">
