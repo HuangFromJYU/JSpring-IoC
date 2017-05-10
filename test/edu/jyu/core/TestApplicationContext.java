@@ -14,7 +14,7 @@ public class TestApplicationContext {
 		A a1 = (A) ac.getBean("A");
 		B b = (B) ac.getBean("B");
 		B b1 = (B) ac.getBean("B");
-		System.out.println(b.getAName() + ":" + b.getAge());
+		System.out.println(a.getB());
 		System.out.println("a==a1 : "+(a==a1));
 		System.out.println("b==b1 : "+(b==b1));
 	}
