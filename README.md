@@ -8,5 +8,6 @@
 - [自己实现Spring IoC容器（一）概述](http://blog.csdn.net/timheath/article/details/69663495)
 - [自己实现Spring IoC容器（二）读取配置文件](http://blog.csdn.net/TimHeath/article/details/69664885)
 - [自己实现Spring IoC容器（三）完成IoC容器](http://blog.csdn.net/TimHeath/article/details/69665092)
+- [自己实现Spring IoC容器（四）IoC容器的Bug](http://blog.csdn.net/timheath/article/details/71515508)
 
 其实这个项目之前我实现了Struts2框架的精简版[JStruts2](https://github.com/HuangFromJYU/JStruts2)，所以项目介绍以及博客的套路都差不多~
