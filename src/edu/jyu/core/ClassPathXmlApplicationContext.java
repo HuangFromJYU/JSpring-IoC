@@ -68,7 +68,10 @@ public class ClassPathXmlApplicationContext implements BeanFactory {
 					Object ref = context.get(prop.getRef());
 					// 如果依赖对象还未被加载则递归创建依赖的对象
 					if (ref == null) {
-						ref = createBeanByConfig(bean);
+						//下面这句的错误在于传入了当前bean配置信息，这会导致不断递归最终发生StackOverflowError
+						//解决办法是传入依赖对象的bean配置信息
+						//ref = createBeanByConfig(bean);
+						ref = createBeanByConfig(config.get(prop.getRef()));
 					}
 					params.put(prop.getName(), ref);
 					// 将ref对象注入bean对象中
